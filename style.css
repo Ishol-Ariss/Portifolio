@@ -1,0 +1,48 @@
+
+/*Start of header styles*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding-left: 5%;  
+    padding-right: 5%;
+    margin-top: 20px;
+    
+}
+
+header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+header nav{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav a{
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+/*End of header styles*/
+
+/*Start of main styles*/
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+main div:first-child img{
+    width: 75%;
+    height: 100%;
+}
+
+
