@@ -8,12 +8,15 @@ header {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
+    height: 100px;
+    width: 100vw;
     align-items: center;
     padding-left: 5%;  
     padding-right: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aqua;
 }
 
 header h1{
@@ -34,18 +37,18 @@ header nav a{
 
 /*Start of main styles*/
 
-main{
+section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10%;
+    height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 25px;
 }
 
-main div:first-child img{
-    width: 75%;
+section div:first-child img{
+    width: 70%;
     height: 100%;
 }
 
