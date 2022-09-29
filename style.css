@@ -85,7 +85,6 @@ header div div:first-child{
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    
     font-weight: 700;
     font-weight: bolder;
     font-size: 2rem;
@@ -114,6 +113,12 @@ header div div:first-child{
 
 /*Start of About me styles*/
 #aboutMe{
+    padding-top: 10%;
+}
+#aboutMe div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 90vw;
     height: 50vh;
     border-radius: 200px;
@@ -121,16 +126,15 @@ header div div:first-child{
     margin-right: auto;
     text-align: center;
     background-color: rgba(100, 255, 190, 0.3);
-    padding-top: 10%;
 }
 /*End of About me styles*/
 
 /*Start of experience styles*/
 #experience{
     display: flex;
-    flex-direction: row;
     padding-top: 10%;
     margin-top: 20%;
+    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start
 }
