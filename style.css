@@ -49,8 +49,9 @@ header div div:first-child{
 #navBar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-right: 3%;
+    justify-content: space-between;
+    padding-right: 7%;
+    padding-left: 5%;
     border-width: 0.15rem;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -69,7 +70,6 @@ header div div:first-child{
 /*End - border around nav bar*/
 
 header div nav a{
-    margin-right: 2rem;
     text-decoration: none;
     color: black;
 }
@@ -162,7 +162,6 @@ header div nav a:hover{
 #experience section:nth-child(2) .xp{
     display: flex;
     flex-direction: row;
-
     width: 45vw;
     height: 25vh;
     background-color: rgba(100, 255, 190, 0.3);
