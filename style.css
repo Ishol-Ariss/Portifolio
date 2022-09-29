@@ -40,18 +40,21 @@ header div div:first-child{
 }
 
 #navBar nav a{
-    font-size: 1.1rem;
-    margin-right: 3rem;
-    margin-left: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    margin: 1.5vw;
+}
+
+#navBar nav a:hover{
+    color: gray;
 }
 
 /*Start - border around nav bar*/
 #navBar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 7%;
-    padding-left: 5%;
+    justify-content: space-around;
     border-width: 0.15rem;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -59,24 +62,18 @@ header div div:first-child{
     background-color: white;
     transform: skew(+30deg);
     translate: 5rem;
-    
+    width: 100vw;
 }
 
 #navBar nav{
     transform: skew(-30deg);
-    max-width: 100%;
     white-space: nowrap;
+    z-index: 999;
+    padding-right: 7vw;
 }
 /*End - border around nav bar*/
 
-header div nav a{
-    text-decoration: none;
-    color: black;
-}
 
-header div nav a:hover{
-    color: gray;
-}
 
 /*End of header styles*/
 
@@ -180,5 +177,6 @@ header div nav a:hover{
     position: relative;
     right: 15%;
     top: 15%;
+    z-index: 1;
 }
 /*End of experience styles*/
