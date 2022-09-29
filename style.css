@@ -14,6 +14,7 @@ body{
 
 header{
     position: fixed;
+    
 }
 
 header div{
@@ -76,10 +77,10 @@ header div nav a:hover{
 
 /*End of header styles*/
 
-/*Start of main styles*/
+/*Start of introduction styles*/
 
 
-main div section{
+#introduction section{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,13 +92,13 @@ main div section{
 }
 
 
-main div section div:first-child img{
+#introduction section div:first-child img{
     margin-left: 20%;
     width: 70%;
     height: 100%;
 }
 
-main div section div:nth-child(2){
+#introduction section div:nth-child(2){
     margin-right: 10%;
 }
 
@@ -109,3 +110,61 @@ main div section div:nth-child(2){
 
     margin-top: 10px;
 }
+/*End of introduction styles*/
+
+
+/*Start of experience styles*/
+#experience{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+    margin-top: 20%;
+    justify-content: space-around;
+    align-items:flex-start
+}
+
+#experience section:first-child{
+    display: block;
+    font-size: 120px;
+    margin-left: 10%;
+    height: 100vh;
+    width: 40%;
+    white-space: nowrap;
+    color: rgb(202, 202, 202);
+    font-weight: bolder;
+}
+
+#experience section:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+#experience section:nth-child(2) p{
+    font-size: 1.2rem;
+    color: rgb(168, 168, 168);
+}
+
+#experience section:nth-child(2) .xp{
+    display: flex;
+    flex-direction: row;
+
+    width: 45vw;
+    height: 25vh;
+    background-color: rgba(100, 255, 190, 0.2);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#experience section:nth-child(2) .xp .box{
+    max-width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+#experience section:nth-child(2) .xp .year{
+    position: relative;
+    right: 15%;
+    top: 15%;
+}
+/*End of experience styles*/
