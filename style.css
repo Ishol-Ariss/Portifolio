@@ -117,7 +117,6 @@ header div div:first-child{
 }
 #aboutMe div{
     display: flex;
-    align-items: center;
     justify-content: space-around;
     width: 90vw;
     height: 50vh;
@@ -127,6 +126,16 @@ header div div:first-child{
     text-align: center;
     background-color: rgba(100, 255, 190, 0.3);
 }
+
+#aboutMe div h2{
+    margin-top: 35%;
+}
+
+#aboutMe div p{
+    margin-top: 40%;
+}
+
+
 /*End of About me styles*/
 
 /*Start of experience styles*/
