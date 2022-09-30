@@ -106,9 +106,9 @@ header div div:first-child{
     overflow: auto;
     font-style: italic;
     font-weight: 300;
-    font-size: 1rem;
-
+    font-size: 1.1rem;
     margin-top: 10px;
+    color: rgb(60, 60, 60);
 }
 /*End of introduction styles*/
 
@@ -129,11 +129,11 @@ header div div:first-child{
 }
 
 #aboutMe div h2{
-    margin-top: 35%;
+    padding-top: 5%;
 }
 
 #aboutMe div p{
-    margin-top: 40%;
+    margin-top: 5%;
 }
 
 
