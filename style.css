@@ -205,10 +205,35 @@ header div div:first-child{
     margin-top: 5%;
 }
 #formacao section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 15px;
     height: 30vh;
     width: 40vw;
     border-radius: 1rem;
     background-color: rgba(100, 255, 190, 0.3);
+}
+
+#formacao section div .curso{
+    border-bottom-style: solid;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 5%
+}
+
+#formacao section div .informacaoCurso{
+    background-color: transparent;
+}
+
+#formacao section div .informacaoCurso ul{
+    list-style: none;
+}
+
+#formacao section div .informacaoCurso ul li{
+    padding-bottom: 3%;
 }
 /*End of formacao styles*/
 
