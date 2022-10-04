@@ -240,10 +240,33 @@ header div div:first-child{
 
 
 /*Start of footer styles*/
-footer{
-    height: 50vh;
+#footer{
+    height: 35vh;
     width: 100vw;
     margin-top: 30%;
-    border-top-style: solid;
+}
+
+#footer section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 1rem;
+    max-width: 60%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgba(100, 255, 190, 0.3);
+
+}
+
+
+#footer section div p{
+    display: inline;
+    position: relative;
+    top: -5px;
+}
+
+#footer section div img{
+    padding-left: 20px;
 }
 /*End of footer styles*/
