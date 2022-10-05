@@ -149,7 +149,7 @@ header div div:first-child{
     align-items: flex-start
 }
 
-#experience section:first-child{
+#experience #experienciaFrase{
     display: block;
     font-size: 120px;
     margin-left: 10%;
@@ -192,6 +192,33 @@ header div div:first-child{
     right: 15%;
     top: 15%;
     z-index: 1;
+}
+
+@media screen and (max-width: 1000px){
+    #experience #experienciaFrase{
+        position: absolute;
+        z-index: -1;
+        left: 0%;
+        right: 0%;
+        color: rgba(189, 189, 189, 0.322);
+    }
+
+    #experience section:nth-child(2){
+        align-items: center;
+    }
+
+    #experience section:nth-child(2) .xp{
+        width: 70%;
+        margin-left: 15vw;
+    }
+
+    #experience section:nth-child(2) .xp .year{
+        right: 27%;
+        white-space: nowrap;
+    }
+    #experience section:nth-child(2) .xp .year p{
+        color: black;
+    }
 }
 /*End of experience styles*/
 
