@@ -1,8 +1,9 @@
 const styles = `
     display: block;
     width: 100%;
+    position: fixed;
     background-color: white;
-    height: 100%;
+    height: auto;
     padding-top: 20px;
     transform: unset;
     align-items: center;
@@ -19,10 +20,11 @@ function showMenu(){
     var navBar = document.getElementById("navBar")
     var menu = document.getElementsByClassName("link")
     var img = document.getElementById("img")
-    console.log("a")
+    
     if(menu[1].style.display != "block"){
         for(let i = 0; i < menu.length; i++){
             menu[i].style.display = "block"
+            menu[i].style.textAlign = "right"
         }
         navBar.style.cssText = styles
         navInDiv.style.cssText = navStyles
@@ -32,13 +34,12 @@ function showMenu(){
             menu[i].style.display = "none"
         }
         img.style.cssText = `
-            display: block;
+            display: inline;
             margin-right: 55px;
+            float: rigth;
         `
         navBar.style.backgroundColor = "transparent" 
         navBar.style.display = "block"
         navInDiv.style.alignItems = "center"
     }
-    
-    console.log("asddad")
 }
