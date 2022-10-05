@@ -260,7 +260,7 @@ header div div:first-child{
 }
 
 
-#footer section div p{
+#footer section div p, a{
     display: inline;
     position: relative;
     top: -5px;
