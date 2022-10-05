@@ -32,7 +32,6 @@ header div h1{
     width: 50%;
     font-weight: 700;
     font-size: 2.5rem;
-    text-overflow: none;
     white-space: nowrap;
 }
 
@@ -51,6 +50,9 @@ header div div:first-child{
     color: gray;
 }
 
+#navBar nav img{
+    display: none;
+}
 /*Start - border around nav bar*/
 #navBar{
     display: flex;
@@ -74,7 +76,26 @@ header div div:first-child{
 }
 /*End - border around nav bar*/
 
+@media screen and (max-width:1000px) {
+    header div h1{
+        padding-left: 1.5rem;
+        font-size: 2rem;
+    }
+    #navBar nav a{
+        display: none;
+    }
+    #navBar nav img{
+        display: inline;
+        margin-right: 55px;
+    }
 
+    #navBar{
+        width: 170px;
+        border-style: none;
+        background-color: transparent;
+    }
+
+}
 
 /*End of header styles*/
 
