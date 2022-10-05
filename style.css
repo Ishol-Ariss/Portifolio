@@ -110,6 +110,26 @@ header div div:first-child{
     margin-top: 10px;
     color: rgb(60, 60, 60);
 }
+
+@media screen and (max-width: 1000px){
+    #introduction section{
+        flex-direction: column;
+    }
+
+    #introduction section div:nth-child(2){
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    #introduction section div h2, p{
+        text-align: center;
+    }
+
+    /*CHANGE HERE WHEN ADDED IMAGE*/
+    #introduction section div:first-child img{
+        width:50vw;
+    }
+}
 /*End of introduction styles*/
 
 /*Start of About me styles*/
