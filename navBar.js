@@ -1,45 +1,49 @@
 const styles = `
-    display: block;
-    width: 100%;
-    position: fixed;
-    background-color: white;
+    
     height: auto;
-    padding-top: 20px;
-    transform: unset;
-    align-items: center;
+    align-items: unset;
+    width: 170px;
 `
-const navStyles = `
+
+const styleNav = `
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transform: unset;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    align-items: start;
+    background-color: white;
+    padding-top: 10px;
+`
+const imgA = `
+    padding-left: 5px;
 `
 
-
+const imgB = `
+    padding-left: 0px;
+`
 function showMenu(){
     var navBar = document.getElementById("navBar")
     var menu = document.getElementsByClassName("link")
     var img = document.getElementById("img")
+    var navInDiv = document.getElementById("navInDiv")
     
     if(menu[1].style.display != "block"){
         for(let i = 0; i < menu.length; i++){
             menu[i].style.display = "block"
-            menu[i].style.textAlign = "right"
         }
         navBar.style.cssText = styles
-        navInDiv.style.cssText = navStyles
+        navInDiv.style.cssText = styleNav
+        img.style.cssText = imgA
     }
     else{
         for(let i = 0; i < menu.length; i++){
             menu[i].style.display = "none"
         }
-        img.style.cssText = `
-            display: inline;
-            margin-right: 55px;
-            float: rigth;
-        `
-        navBar.style.backgroundColor = "transparent" 
-        navBar.style.display = "block"
+        navInDiv.style.backgroundColor = "transparent" 
+        navBar.style.alignItems = "center"
         navInDiv.style.alignItems = "center"
+        img.style.cssText = imgB
+
     }
 }
