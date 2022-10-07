@@ -6,6 +6,7 @@ const styles = `
 `
 
 const styleNav = `
+@media screen and (max-width: 1000px){
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -14,6 +15,7 @@ const styleNav = `
     align-items: start;
     background-color: white;
     padding-top: 10px;
+}
 `
 const imgA = `
     padding-left: 5px;

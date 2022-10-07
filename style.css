@@ -56,28 +56,28 @@ header div div:first-child{
 /*Start - border around nav bar*/
 
 
-    #navBar{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-width: 0.15rem;
-        border-bottom-style: solid;
-        border-left-style: solid;
-        border-color: rgba(0, 0, 0, 1);
-        background-color: white;
-        transform: skew(+30deg);
-        translate: 5rem;
-        width: 100vw;
-    }
+#navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-width: 0.15rem;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: rgba(0, 0, 0, 1);
+    background-color: white;
+    transform: skew(+30deg);
+    translate: 5rem;
+    width: 100vw;
+}
 
-    #navBar nav{
-        transform: skew(-30deg);
-        white-space: nowrap;
-        z-index: 999;
-        padding-right: 7vw;
-    }
+#navBar nav{
+    transform: skew(-30deg);
+    white-space: nowrap;
+    z-index: 999;
+    padding-right: 7vw;
+}
 
-    
+
 /*End - border around nav bar*/
 
 @media screen and (max-width:1000px) {
